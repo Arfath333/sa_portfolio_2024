@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  background-color: black;
+  color: white;
+}
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 0.5px solid rgb(30, 32, 41);
+  overflow:hidden;
+  position:fixed;
+  top: 0;
+  padding: 16px 20px 16px 25px;
+  background-color: black;
+
+}
+.topnav strong {
+  color: rgb(143, 144, 148);
+  font-size: 33px;
+  font-weight: 600;
+}
+.topnav b {
+  color: white;
+}
+.topnav .list {
+  display: none;
+}
+.topnav a {
+  color: white;
+  font-weight: 700;
+}
+ul {
+  list-style: none;
+}
+.first_page {
+  margin: 7.3em 1em 0em 1.5em;
+}
+.header {
+  color: rgb(56, 207, 145);
+  font-size: 20px;
+  font-weight: 500;
+}
+.header img{
+  position: absolute;
+  z-index: -1;
+  top: 102px;
+  left: calc(var(--chakra-space-4)* -1);
+  width: 70px;
+  filter: invert(0.1);
+  margin: 13px 0px 0px -16px;
+
+}
+.header .name {
+  color: white;
+  font-size: 53px;
+  font-weight: 800;  
+}
+.header .content {
+  letter-spacing: -1px;
+  color: white;
+  font-weight: 600;
+  padding: 1em 0em 1em 0em;
+ }
+ .header span {
+  color: rgb(143, 144, 148);
+  line-height: 1.3em;
+
+ }
+ .bio {
+  color: rgb(143, 144, 148);
+  font-weight: 400;
+  font-size: 13px;
+  padding: 13px 10px 8px 0px;
+  letter-spacing: 0px;
+  line-height: 1.5em;
+ }
+.button-bar {
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+}
+button {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  display: flex;
+  align-items: center;
+  margin: 25px 20px 25px 0px;
+  padding: 3px 10px 5px 8px;
+  border-radius: 6px;
+}
+button img {
+  margin: 3px 5px 3px 3px;
+}
+.Second_page {
+  color: rgb(143, 144, 148);
+  padding: 60px 30px 20px 20px;
+  font-weight: 200;
+}
+.heading {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  padding: 10px 0px 11px 0px;
+}
+
+.About_me p{
+  color: grey;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  padding: 10px 0px 10px 0px;
+
+  }
+
+  .About_me span{
+  color: rgb(47, 192, 132);
+  }
