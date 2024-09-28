@@ -5,178 +5,248 @@
 }
 body {
 font-family: "Inter", sans-serif;
-font-optical-sizing: auto;
-font-weight: 100;
-font-style: normal;
 background-color: black;
+}
+.Nav a{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+margin-inline: auto;
+padding: 16px 25px;
+border-bottom: 0.5px solid rgb(30, 32, 41);
+position:fixed;
+overflow:hidden;
+top: 0;
+background-color: black;
+text-decoration: none;
+}
+.Nav p {
+color: rgb(143, 144, 148);
+font-size: 30px;
+font-weight: 600;
+cursor: pointer;
+}
+.Nav .B1bn1gd {
 color: white;
 }
-.topnav {
-display: flex;
-align-items: center;
-justify-content: space-between;
-width: 100%;
-border-bottom: 0.5px solid rgb(30, 32, 41);
-overflow:hidden;
-position:fixed;
-z-index: 1000;
-top: 0;
-padding: 16px 10px 16px 25px;
-background-color: black;
-
+.Nav button{
+  background-color: black;
+  border: none;
 }
-.topnav strong {
+.Nav svg{
+ width: 30px;
+ height: 30px;
+ color: white;
+ z-index: 2;
+}
+.menu {
+display: none;
+position:fixed;
+right: 0;
+top: 0;
+bottom:0;
+width: 90%;
+transform: translateX(0%) translateZ(0px);
+color: white;
+}
+.menu section{
+border-bottom: 1px ;
+}
+.menu span{
+font-size: 20px;
 color: rgb(143, 144, 148);
-font-size: 33px;
 font-weight: 600;
 }
-.topnav b {
-color: white;
-}
-.topnav .list {
-display: none;
-}
-.topnav a {
-color: white;
-font-weight: 700;
+.menu button{
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  font-size: 12px;
+  position: absolute;
+  cursor: pointer;
+  background: transparent;
+  border: none;
 }
 ul {
 list-style: none;
 }
+.main{
+  padding: 16px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .first_page {
-margin: 7em 1em 0em 1.5em;
+margin: 5rem 0 ;
 }
-.header {
-color: rgb(56, 207, 145);
-font-size: 20px;
-font-weight: 500;
-}
-.header img{
+.first_page img{
 position: absolute;
 z-index: -1;
-top: 102px;
-left: calc(var(--chakra-space-4)* -1);
-width: 70px;
+top: 5.8rem;
+left: 0.5rem; 
+width: 4rem;
 filter: invert(0.1);
-margin: 8px 0px 0px -16px;
+}
+.first_page .top{
+color: rgb(56, 207, 145);
+font-weight: 600;
+width: 100%;
+}
+.first_page .top p{
+  font-size: 18px;
+}
+
+.first_page .top .name {
+color: white;
+font-size: 3em;
+font-weight: 800;  
+line-height: 1em;
+}
+@media screen and (min-width:375px){ 
+.first_page .top .name {
+font-size: 3.5em;
+}
 
 }
-.header .name {
-color: white;
-font-size: 55px;
-font-weight: 800;  
-line-height: 1.1em;
-}
-.header .content {
+.first_page .content {
 letter-spacing: -1px;
 color: white;
+font-size: 16px;
 font-weight: 600;
-padding: 1.3em 0em 1em 0em;
+margin-top: 1.5em;
 }
-.header span {
+.first_page span {
 color: rgb(143, 144, 148);
 line-height: 1.3em;
 
 }
 .bio {
+margin-top: 2.3em;
 color: rgb(143, 144, 148);
 font-weight: 400;
-font-size: 13px;
-padding: 20px 10px 5px 0px;
+font-size: 0.75em;
+/* padding: 20px 10px 5px 0px; */
 line-height: 1.5em;
 }
 .bio span{
 color: rgb(48, 197, 136);
+font-size: 0.8rem;
 }
 .button-bar {
 display: flex;
 justify-content:space-between;
 width: 100%;
+margin-top: 0.8em;
 }
-button {
-font-size: 14px;
+.button-bar a {
+  /* width: 30%; */
+text-decoration: none;
+display: flex;
+color: white;
+
+}
+.button-bar button {
+font-size: 0.8rem;
+font-weight: 600;
+font-family: "Inter", sans-serif;
+background-color: rgb(20, 20, 20);
+border: none;
+align-items: center;
+margin-top: 1.5em;
+padding: 0.5em 0.7em;
+border-radius: 7px;
+}
+button svg{
+margin: 0px 8px 0px 0px;
+}
+.Second_page {
+display: flex;
+flex-direction: column;
+color: rgb(143, 144, 148);
+font-weight: 200;
+transition: 0.4s;
+}
+.Second_page .heading {
+font-family: "Ubuntu", sans-serif;
+font-style: normal;
+font-size: 1.5rem;
 font-weight: 700;
+color: white;
+margin: 0.3em 0;
+}
+.About_me article{
+color: grey;
+font-size: 13px;
+font-weight: 400;
+line-height: 18px;
+margin: 1em 0;
+}
+.About_me span{
+  color: rgb(47, 192, 132);
+  }
+.prf-img{
+  margin: 1em 0;
+}
+.prfimg{
+  position: absolute;
+  z-index: 1;
+  top: 58.8em;
+  right: 0px;
+  width: 5.5em;
+  filter: invert(0.1);
+}
+.main .bottom{
+font-size: 33px;
+font-weight: 700;
+text-align: center;
+margin-top: 2em;
+color: white;
+}
+.main .last{
+color: rgb(143, 144, 148);
+text-align: center;
+line-height: 23px;
+font-size: 15px;
+font-weight: 400;
+margin: 2em 0em;
+}
+.fed {
+color: rgb(47, 192, 132);
+}
+.btn {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.btn a {
+  text-decoration: none;
+}
+.btn button {
+font-size: 0.8rem;
+font-weight: 600;
+font-family: "Inter", sans-serif;
 color: white;
 background-color: rgb(20, 20, 20);
 border: none;
 display: flex;
 align-items: center;
-margin: 25px 0px 25px 0px;
-padding: 8px 10px 8px 10px;
+padding: 0.5em 0.7em;
 border-radius: 7px;
 }
-
-button svg{
-margin: 0px 8px 0px 0px;
-}
-.Second_page {
-color: rgb(143, 144, 148);
-padding: 55px 30px 20px 20px;
-font-weight: 200;
-}
-.heading {
-font-family: "Ubuntu", sans-serif;
-font-style: normal;
-font-size: 25px;
-font-weight: 700;
-color: white;
-padding: 15px 0px 11px 0px;
-}
-.About_me p{
-color: grey;
-font-size: 14px;
-font-weight: 400;
-line-height: 21px;
-padding: 10px 0px 10px 0px;
-}
-.About_me span{
-color: rgb(47, 192, 132);
-}
-.prf-img{
-  margin: 0px 35px;
-}
-.prfimg{
-  position: absolute;
-  z-index: 3;
-  top: 67em;
-  right: 10px;
-  width: 100px;
-  filter: invert(0.1);
-}
-.footer{
-  margin: 50px 25px 38px 25px;
-}
-.footer .top{
-font-size: 33px;
-font-weight: 700;
+.footer {
 text-align: center;
-margin: 3em 0em 1.5em 0em;
+margin-top: 9rem;
+margin-bottom: 2em;
 }
-.footer .main {
-color: rgb(143, 144, 148);
-text-align: center;
-line-height: 23px;
-font-weight: 400;
-padding: 0em 0em 9em 0em;
-}
-.footer .fed {
-color: rgb(47, 192, 132);
-}
-.footer .btn {
-display: flex;
-justify-content: space-around;
-padding: 20px 0px 20px 0px;
-}
-.footer svg{
-display: flex;
-}
-.btm {
-font-size: 14px;
+.footer p{
+font-size: 12px;
 font-weight: 400;
 line-height: 20px;
 text-align: center;
+color: white;
 }
-.btm span{
+.footer span{
 color: rgb(47, 192, 132);
-font-weight: 500;
+font-weight: 600;
 }
